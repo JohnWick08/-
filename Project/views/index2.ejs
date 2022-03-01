@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Cupid's Arrow</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/cssfile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+        width: 700px;
+        height: 700px;
+        margin: auto;
+      }
+  </style>
+</head>
+
+<body>
+	<!-- Loader -->
+	<audio src="music/Thinking Out Loud.mp3" controls="controls" autoplay loop="true" ></audio>
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	
+	<!-- Page Content -->
+	<div class="container-fluid tm-main">
+		<div class="row tm-main-row">
+
+			<!-- Sidebar -->
+			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+
+				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+
+				<div class="inner">
+					<nav id="tmMainNav" class="tm-main-nav">
+						<ul>
+							<li>
+								<a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
+									<i class="fas fa-home tm-nav-fa-icon"></i>
+									<span>Home</span>
+								</a>
+							</li>
+							<li>
+								<a href="#introduction" id="tmNavLink1" class="scrolly" data-bg-img="p5.jpg" data-page="#tm-section-5">
+									<i class="fas fa-home tm-nav-fa-icon"></i>
+									<span>Intro</span>
+								</a>
+							</li>
+							<li>
+								<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2" >
+									<i class="fas fa-map tm-nav-fa-icon"></i>
+									<span>Explore</span>
+								</a>
+							</li>							
+							<li>
+								<a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
+									<i class="fas fa-users tm-nav-fa-icon"></i>
+									<span>Your Matches</span>
+								</a>
+							</li>
+							<li>
+								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
+									<i class="fas fa-comments tm-nav-fa-icon"></i>
+									<span>My Profile</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+
+					<!-- section 1 -->
+					<section id="tm-section-1" class="tm-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCupid's Arrow</h1></header>
+							<p class="mb-5 tm-font-big">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExplore your journry of love.</p>
+
+							
+						</div>
+					</section>
+
+					<section id="tm-section-5" class="tm-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">About Cupid's Arrow</h1></header>
+							<p class="mb-5 tm-font-big">Cupid's Arror is a website for successful people to find their perfect partner.</p>
+							<p class="mb-5 tm-font-big">In the section of Explore, you will be able to encounter strangers you may never meet in real life, scroll left to pass the stranger, and scroll right to send your goodwill.When a person liked you and coincidentally you liked him/her too. He or she will show up in the section of Your Matches. His or Her information will be visible.Before you start exploring, make sure you had filled in your profile information. Have fun!</p>
+							
+							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Explore...</a> 
+							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
+							
+						</div>
+					</section>
+
+					<!-- section 2 -->
+					<section id="tm-section-2" class="tm-section">
+						<div>
+							<div class="container">
+								<header class="mb-4"><h2 class="tm-text-shadow">Explore</h2></header>	
+							  <br>
+							  <div id="myCarousel" class="carousel slide" data-interval="false">
+							   
+
+							    <!-- Wrapper for slides -->
+							    <div class="carousel-inner" role="listbox">
+
+							      <div class="item active">
+							        <img src="img/images.jpeg" alt="Ann" width="460" height="345">
+							        <div class="carousel-caption">
+							          <h3>Ann 20</h3>
+							        </div>
+							      </div>
+
+							      <div class="item">
+							        <img src="img/images-2.jpg" alt="Rebecca" width="460" height="345">
+							        <div class="carousel-caption">
+							          <h3>Rebecca 18</h3>
+							        </div>
+							      </div>
+							    
+							      <div class="item">
+							        <img src="img/images-3.jpeg" alt="Olivia" width="460" height="345">
+							        <div class="carousel-caption">
+							          <h3>Olivia 24</h3>
+							        </div>
+							      </div>
+
+							  
+							    </div>
+
+							    <!-- Left and right controls -->
+							    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="next">
+							      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							      <span class="sr-only">Previous</span>
+							    </a>
+							    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							      <span class="sr-only">Next</span>
+							    </a>
+							  </div>
+							</div>
+							
+									
+      		          	
+					</section>
+
+					<!-- section 3 -->
+					<section id="tm-section-3" class="tm-section">
+						<div>
+							<div class="container">
+								<header class="mb-4"><h2 class="tm-text-shadow">Explore</h2></header>	
+							  <br>
+							  <div id="myCarousel2" class="carousel slide" data-interval="false">
+							   
+
+							    <!-- Wrapper for slides -->
+							    <div class="carousel-inner" role="listbox">
+
+							      <div class="item active">
+							        <img src="img/images.jpeg" alt="Ann" width="460" height="345">
+							        <div class="carousel-caption">
+							          <h3>Ann 20</h3>
+
+									  <details>
+										<Summary>More Information</Summary>
+										<p>
+											<div>Phone: (613)520-1314</div>
+											<div>Email: Ann1024@cupid.com</div>
+											<div>Living in: Vancover</div>
+											<div>Company/School: Secret</div>
+											<div>Industy: Secret</div>
+										</p>
+									</details>
+
+							        </div>
+							      </div>
+
+							    
+							      <div class="item">
+							        <img src="img/images-3.jpeg" alt="Olivia" width="460" height="345">
+							        <div class="carousel-caption">
+							          <h3>Olivia 24</h3>
+
+									  <details>
+										<Summary>More Information</Summary>
+										<p>
+											<div>Phone: (613)999-2020</div>
+											<div>Email: Olivia@cupid.com</div>
+											<div>Living in: Ottawar</div>
+											<div>Company/School: uOttawa</div>
+											<div>Industy: Art</div>
+										</p>
+									</details>
+
+							        </div>
+							      </div>
+
+							  
+							    </div>
+
+							    <!-- Left and right controls -->
+							    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+							      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							      <span class="sr-only">Previous</span>
+							    </a>
+							    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+							      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							      <span class="sr-only">Next</span>
+							    </a>
+
+							  </div>
+							</div>
+							
+									
+      		          	
+
+					</section>
+
+					<!-- section 4 -->
+				<section id="tm-section-4" class="tm-section">
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row mb-4">
+								<div class="col-sm-12">
+									<header><h2 class="tm-text-shadow">Information</h2></header>
+								</div>
+							</div>
+							<div class="row tm-page-4-content">
+								<div class="col-md-6 col-sm-12 tm-contact-col">
+									<div class="contact_message" id = "contact_message">
+										<form action="#contact" class="contact-form" id = "myform">
+											<div class="form-group">
+												<input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required="">
+											</div>
+											<div class="form-group">
+												<input type="gender" id="contact_gender" name="contact_gender" class="form-control" placeholder="Gender" required="">
+											</div>
+											<div class="form-group">
+												<input type="number" id="contact_age" name="contact_age" class="form-control" placeholder="Age" min="18" max="100"required="">
+											</div>
+											<div class="form-group">
+												<input type="tel" id="contact_phone" name="contact_phone" class="form-control" placeholder="phone" >
+											</div>
+											<div class="form-group">
+												<input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required="">
+											</div>
+											<div class="form-group">
+												<input type="text" id="contact_LivingIn" name="contact_LivingIn" class="form-control" placeholder="Living in" ></textarea>
+											</div>
+											<div class="form-group">
+												<input type="text" id="contact_C_S" name="contact_C_S" class="form-control" placeholder="Company/School" ></textarea>
+											</div>
+										
+											<div class="form-group">
+												<input type="text"id="contact_Industry" name="contact_Industry" class="form-control" placeholder="Industry" ></textarea>
+											</div>
+											<div class="form-group">
+												<textarea id="contact_AboutMe" name="contact_AboutMe" class="form-control" rows="9" placeholder="About me" required=""></textarea>
+											</div>
+											<button id ="btn_formdata" type="submit" class="btn tm-btn-submit tm-btn ml-auto">Submit</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12 tm-contact-col">
+									<form action="/" enctype="multipart/form-data" method="post">
+										<input type="file" name="image" accept='image/*'>
+										<input type="submit" value="Upload">
+									</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>					
+				</div>	<!-- footer content -->							
+				<footer class="footer-link">
+					<p class="footer-text">This website is created by the Cereal Killers</p>
+				</footer>
+			</div>	<!-- footer-->			
+		</div>
+		<div id="preload-01"></div>
+		<div id="preload-02"></div>
+		<div id="preload-03"></div>
+		<div id="preload-04"></div>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
+
+		<script>
+
+		var sidebarVisible = false;
+		var currentPageID = "#tm-section-1";
+
+		
+		//When clicked on Form submit
+		$('#btn_formdata').click(function () {
+			var person = {
+				"cond":"addPerson",
+				"Account_name": document.getElementById("contact_name").value,
+				"age": document.getElementById("contact_age").value,
+				"phone": document.getElementById("contact_phone").value,
+				"email": document.getElementById("contact_email").value,
+				"city": document.getElementById("contact_LivingIn").value,
+				"C_S": document.getElementById("contact_C_S").value,
+				"Industry": document.getElementById("contact_Industry").value,
+				"about_me": document.getElementById("contact_AboutMe").value,
+			}
+			$.ajax({
+				type: 'post',
+				url: 'http://localhost:8888/new_person',
+				// contentType: false,
+				contentType: "application/json; charset=UTF-8",
+				data: JSON.stringify(person),
+				success(res) {
+					console.log(res);
+				}
+			})
+		})
+
+
+
+  		// Setup Nav
+  		function setupNav() {
+  			// Add Event Listener to each Nav item
+	     	$(".tm-main-nav a").click(function(e){
+	     		e.preventDefault();
+		    	
+		    	var currentNavItem = $(this);
+		    	changePage(currentNavItem);
+		    	
+		    	setupCarousel();
+		    	setupFooter();
+
+		    	// Hide the nav on mobile
+		    	$("#tmSideBar").removeClass("show");
+		    });	    
+  		}
+
+  		function changePage(currentNavItem) {
+  			// Update Nav items
+  			$(".tm-main-nav a").removeClass("active");
+     		currentNavItem.addClass("active");
+
+	    	$(currentPageID).hide();
+
+	    	// Show current page
+	    	currentPageID = currentNavItem.data("page");
+	    	$(currentPageID).fadeIn(1000);
+
+	    	// Change background image
+	    	var bgImg = currentNavItem.data("bgImg");
+	    	$.backstretch("img/" + bgImg);		    	
+  		}
+
+  		// Setup Nav Toggle Button
+  		function setupNavToggle() {
+
+			$("#tmMainNavToggle").on("click", function(){
+				$(".sidebar").toggleClass("show");
+			});
+  		}
+
+  		// If there is enough room, stick the footer at the bottom of page content.
+  		// If not, place it after the page content
+  		function setupFooter() {
+  			
+  			var padding = 100;
+  			var footerPadding = 40;
+  			var mainContent = $("section"+currentPageID);
+  			var mainContentHeight = mainContent.outerHeight(true);
+  			var footer = $(".footer-link");
+  			var footerHeight = footer.outerHeight(true);
+  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
+  			var windowHeight = $(window).height();		
+
+  			if(totalPageHeight > windowHeight){
+  				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
+  				footer.css("bottom", footerHeight + "px");  			
+  			}
+  			else {
+  				$(".tm-content").css("margin-bottom", "0");
+  				footer.css("bottom", "20px");  				
+  			}  			
+  		}
+
+  		// Everything is loaded including images.
+      	$(window).on("load", function(){
+
+      		// Render the page on modern browser only.
+      		if(true) {
+				// Remove loader
+		      	$('body').addClass('loaded');
+
+		      	// Page transition
+		      	var allPages = $(".tm-section");
+
+		      	// Handle click of "Continue", which changes to next page
+		      	// The link contains data-nav-link attribute, which holds the nav item ID
+		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
+		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
+			    
+			    if(linkToAnotherPage != null) {
+			    	
+			    	linkToAnotherPage.on("click", function(){
+			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
+			    		$("a" + navItemToHighlight).click();
+			    	});
+			    }
+		      	
+		      	// Hide all pages
+		      	allPages.hide();
+
+		      	$("#tm-section-1").fadeIn();
+
+		     	// Set up background first page
+		     	var bgImg = $("#tmNavLink1").data("bgImg");
+		     	
+		     	$.backstretch("img/" + bgImg, {fade: 500});
+
+		     	// Setup Carousel, Nav, and Nav Toggle
+
+			    setupNav();
+			    setupNavToggle();
+			    setupFooter();
+
+			    // Resize Carousel upon window resize
+			    $(window).resize(function() {
+			    	setupCarousel();
+			    	setupFooter();
+			    });
+      		}	      	
+		});
+      	window.addEventListener("DOMContentLoaded", event => {
+  				const audio = document.querySelector("audio");
+  				audio.volume = 0.2;
+  				audio.play();
+				});
+		</script>
+	</body>
+</html>
